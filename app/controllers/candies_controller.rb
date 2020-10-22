@@ -1,9 +1,13 @@
 class CandiesController < ApplicationController
 
-  before_action :find_candy, only [:show, :edit]
+  before_action :find_candy, only: [:show, :edit]
 
   def index
     @candy = Candy.all 
+  end
+
+  def new
+    @candy = Candy.new
   end
 
   def create
