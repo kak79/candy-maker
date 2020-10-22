@@ -1,0 +1,8 @@
+class CandiesController < ApplicationController
+
+
+
+
+
+  
+end
