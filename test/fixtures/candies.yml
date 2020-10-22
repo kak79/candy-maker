@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  sweetness: MyString
+  yummy: false
+
+two:
+  name: MyString
+  sweetness: MyString
+  yummy: false
