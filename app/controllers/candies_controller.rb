@@ -1,6 +1,6 @@
 class CandiesController < ApplicationController
 
-  before_action :find_candy, only: [:show, :edit]
+  before_action :find_candy, only: [:show, :edit , :update, :destroy]
 
   def new
     @candy = Candy.new
@@ -33,6 +33,9 @@ class CandiesController < ApplicationController
 
   def find_candy
     @candy = Candy.find_by(id: params[:id])
+    if !@candy
+      redirct_to candies_path
+    end
   end
 
   def candy_params
