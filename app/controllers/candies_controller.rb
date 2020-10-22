@@ -2,10 +2,6 @@ class CandiesController < ApplicationController
 
   before_action :find_candy, only: [:show, :edit]
 
-  def index
-    @candy = Candy.all 
-  end
-
   def new
     @candy = Candy.new
   end
@@ -19,7 +15,11 @@ class CandiesController < ApplicationController
     end
   end
 
-  def update
+  def index
+    @candy = Candy.all 
+  end
+
+    def update
     @candy.update(candy_params)
     redirct_to candy_path(@candy)
   end
