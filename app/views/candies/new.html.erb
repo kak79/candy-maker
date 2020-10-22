@@ -1,1 +1,12 @@
-<p>new</p>
+<h1>Please bring more goodies to us!</h1>
+<h3>Add a Candy!</h3>
+
+<%= form_with model: @candy do |form| %>
+<%= form.label "Name"%>
+<%= form.text_field :name %>
+<%= form.label "Sweetness"%>
+<%= form.text_field :sweetness %>
+<%= form.label "Yummy?"%>
+<%= form.check_box :yummy %>
+<%= form.submit "Add Candy?" %>
+<% end %>
