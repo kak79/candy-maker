@@ -1,6 +1,6 @@
 <h2><u>Lots and Lots of Candy!!</u></h2>
 <% @candy.each do |candy| %>
-<% link_to candy.name, candy_path(candy) %>
+<%= link_to candy.name, candy_path(candy) %>
 <% end %>
 
 
