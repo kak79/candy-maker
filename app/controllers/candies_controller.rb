@@ -34,7 +34,7 @@ class CandiesController < ApplicationController
   def find_candy
     @candy = Candy.find_by(id: params[:id])
     if !@candy
-      redirect_to candies_path
+      redirect_to candy_path
     end
   end
 
