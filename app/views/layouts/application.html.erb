@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!doctype html>
+<html lang="en">
+<head>
     <title>CandyMaker</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -8,8 +8,38 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+    <div class="header">
+      <div class="pure-menu-horizontal">
+        <span>
+          <a href="/candies/">Home</a>&nbsp;&middot;                    
+          <a href="#">#</a>&nbsp;&middot;
+          <a href="#">#</a>&nbsp;&middot;
+          <a href="#">#</a>&nbsp;&middot;
+          <a href="#">#</a>&nbsp;&middot;
+          <a href="#">#</a>
+        </span>    
+      </div>
+    </div>
+
+      <%= yield %>
+
+      <p> </p>
+      <p> </p>
+      <p> </p>
+
+
+    <div class="footer">
+      <div class="pure-menu-horizontal">
+        <span>
+          <a href="/candies/">Home</a>&nbsp;&middot;                    
+          <a href="#">#</a>&nbsp;&middot;
+          <a href="#">#</a>&nbsp;&middot;
+          <a href="#">#</a>&nbsp;&middot;
+          <a href="#">#</a>&nbsp;&middot;
+          <a href="#">#</a>
+        </span>    
+      </div>
+    </div>
   </body>
 </html>
