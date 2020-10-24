@@ -12,3 +12,8 @@
 <%= form.check_box :yummy %>
 <%= form.submit "Add Candy?" %>
 <% end %>
+<br>
+<br>
+<%= button_to "Delete this Candy", candy_path(@candy), method: :delete %>
+
+<br>

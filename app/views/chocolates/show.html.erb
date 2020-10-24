@@ -1,0 +1,10 @@
+<h1><%= @chocolate.name %></h1>
+<h3>Sweetness Scale: <%= @chocolate.sweetness %></h3>
+<h3>Yummy?: <%= @chocolate.yummy %></h3><br>
+<img class="chocolate-img" src="<%= @chocolate.img_url %>" alt="img of some yummy chocolate">
+<br>
+<%= button_to "Edit chocolate", edit_chocolate_path(@chocolate), method: :get %><br>
+
+
+
+

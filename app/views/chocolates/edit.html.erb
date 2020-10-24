@@ -1,0 +1,19 @@
+<h1>Please bring more goodies to us!</h1>
+<h3>Edit a Chocolate!</h3>
+
+<%= form_with model: @chocolate do |form| %>
+<%= form.label "Name"%>
+<%= form.text_field :name %>
+<%= form.label "Price"%>
+<%= form.number_field :price %>
+<%= form.label "Image URL"%>
+<%= form.text_field :img_url %>
+<%= form.label "Description"%>
+<%= form.text_field :description %>
+<%= form.submit "Edit Chocolate?" %>
+<% end %>
+<br>
+<br>
+<%= button_to "Delete this Chocolate", chocolate_path(@chocolate), method: :delete %>
+
+<br>

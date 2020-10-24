@@ -1,0 +1,7 @@
+<h2><u>Lots and Lots of chocolate!!</u></h2>
+<% @chocolate.each do |chocolate| %>
+<%= link_to chocolate.name, chocolate_path(chocolate) %>
+<% end %>
+
+
+<a href="/chocolates/new/">Add More Yummy chocolate</a>

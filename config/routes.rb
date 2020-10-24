@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :candies
+  resources :candies, :chocolates
 
 end

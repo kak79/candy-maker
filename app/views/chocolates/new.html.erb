@@ -1,0 +1,14 @@
+<h1>Please bring more goodies to us!</h1>
+<h3>Add a Chocolate!</h3>
+
+<%= form_with model: @chocolate do |form| %>
+<%= form.label "Name"%>
+<%= form.text_field :name %>
+<%= form.label "Price"%>
+<%= form.number_field :price %>
+<%= form.label "Image URL"%>
+<%= form.text_field :img_url %>
+<%= form.label "Description"%>
+<%= form.text_field :description %>
+<%= form.submit "Add Chocolate?" %>
+<% end %>
