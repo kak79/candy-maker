@@ -1,7 +1,7 @@
 <h2><u>Lots and Lots of Candy!!</u></h2>
 <% @candy.each do |candy| %>
-<%= link_to candy.name, candy_path(candy) %>
+<%= link_to image_tag(candy.img_url, class: "candy-thumb"), candy_path(candy) %>
 <% end %>
 
-
+<br><br>
 <a href="/candies/new/">Add More Yummy Candy</a>
