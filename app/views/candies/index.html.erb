@@ -1,4 +1,4 @@
-<h2><u>Lots and Lots of Candy!!</u></h2>
+<h2 class="index-title"><u>Lots and Lots of Candy!!</u></h2>
 <% @candy.each do |candy| %>
 <%= link_to image_tag(candy.img_url, class: "candy-thumb"), candy_path(candy) %>
 <% end %>
