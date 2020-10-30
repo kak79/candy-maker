@@ -2,6 +2,7 @@
 <h3>Add a Chocolate!</h3>
 
 <%= form_with model: @chocolate do |form| %>
+<%= form.collection_select(:candy_id, Candy.all, :id, :name, prompt: true) %>
 <%= form.label "Name"%>
 <%= form.text_field :name %>
 <%= form.label "Price"%>
